@@ -1,0 +1,140 @@
+/*phone media query*/
+@media only screen and (max-width: 600px) {  
+:root{
+    --text-color: #332D56;
+    --primary-color: #4E6688;
+    --accent-color: #71C0BB;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+background-color: #332D56;
+color: white;
+}
+.Formcontainer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+}
+/*tablet media query*/
+@media only screen and (min-width: 768px) {
+    :root{
+        --text-color: #332D56;
+        --primary-color: #4E6688;
+        --accent-color: #71C0BB;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        padding: auto;
+        margin: auto;
+    }
+    .navbar{
+    background-color: #332D56;
+    color: white;
+    }
+    .Formcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    } 
+    .card{
+        height: 60%;
+        width: 50%;
+    }
+}
+
+/*laptop media query*/
+@media only screen and (min-width: 992px){
+    :root{
+        --text-color: #332D56;
+        --primary-color: #4E6688;
+        --accent-color: #71C0BB;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    .navbar{
+    background-color: #64bfc97b;
+    color: white;
+    height: 11vh;
+    border-bottom: 0.5px solid #64bfc97b;
+    }
+    .btns{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 40%;
+        justify-content: right;
+        gap: 2%;
+        margin-right: 10px;
+    }
+    .btns button{
+       width: 30%; height: 5vh;
+       background-color: #488990;
+        border: 1px solid #1d645fda;
+       border-radius: 10px;
+       text-transform: uppercase;
+       font-weight: 600;
+    }
+    .btns a{
+        text-decoration: none;
+        color: white;
+    }
+    .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    } 
+    .card{
+        height: 100%;
+        width: 50%;
+    }
+    .CountryContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+    }
+    .countryCard{
+        width: 50%;
+        height: 50%;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .countryCard:hover{
+        border: 1px solid var(--accent-color);
+    }
+    .countryCard p{
+     font-weight: bold;
+    }
+    .countryCard a{
+        color: var(--accent-color);
+        margin-bottom: 5px;
+    }
+    .main{
+        height: 100%;
+    }
+    
+}
